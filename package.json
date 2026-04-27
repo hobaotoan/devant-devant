@@ -1,0 +1,23 @@
+{
+  "name": "devant-devant",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "TEST_ENV=ae playwright test",
+    "test:ui": "TEST_ENV=ae playwright test tests/ui",
+    "test:api": "TEST_ENV=ae playwright test tests/api",
+    "test:smoke": "TEST_ENV=ae playwright test --grep @type:smoke",
+    "test:critical": "TEST_ENV=ae playwright test --grep @priority:high",
+    "report": "pkill -f 'playwright.*show-report' 2>/dev/null; playwright show-report",
+    "clean": "rm -rf playwright-report test-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/bun": "latest",
+    "dotenv": "^17.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
