@@ -1,0 +1,13 @@
+{
+  "tests/ui/dt-01-register.spec.ts": {
+    "identifier": "TC-5389",
+    "priority": "high",
+    "type": "regression",
+    "severity": "major",
+    "status": "deprecated",
+    "tags": "jira",
+    "steps": "[]",
+    "issues": "[]",
+    "description": ""
+  }
+}

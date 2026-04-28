@@ -19,7 +19,7 @@ import { makeTestUser } from '../helpers/user-factory'
 test.describe.skip('DT-1 · User registration [DEPRECATED — Jira marked outdated 2026-04-27]', () => {
   test(
     'new visitor can register with valid details and becomes logged in @priority:high @type:smoke',
-    { tag: ['@jira:DT-1', '@id:TC-1C2B', '@priority:high', '@type:smoke', '@severity:major', '@status:obsolete'] },
+    { tag: ['@jira:DT-1', '@id:TC-1C2B', '@priority:high', '@type:smoke', '@severity:major', '@status:deprecated'] },
     async ({ page, newUser }) => {
       const home = new HomePage(page)
       const auth = new AuthPage(page)
